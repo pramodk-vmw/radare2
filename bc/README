@@ -1,0 +1,4 @@
+sudo apt-get install llvm
+sudo -H pip install llvmcpy
+clang -emit-llvm foo.c -c -o foo.bc
+python test.py foo.bc #gives LLVM IR
